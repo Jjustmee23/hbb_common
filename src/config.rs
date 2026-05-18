@@ -2940,6 +2940,10 @@ pub mod keys {
         "keep-awake-during-outgoing-sessions";
 
     pub const OPTION_DISABLE_GROUP_PANEL: &str = "disable-group-panel";
+    /// When not `N`, the Accessible devices sidebar lists only device groups (no user accounts).
+    pub const OPTION_ACCESSIBLE_DEVICES_HIDE_USERS: &str = "accessible-devices-hide-users";
+    /// When not `N`, shared address book list from API requests only organization catalog profiles.
+    pub const OPTION_AB_SHARED_CATALOG_ONLY: &str = "ab-shared-catalog-only";
     pub const OPTION_DISABLE_DISCOVERY_PANEL: &str = "disable-discovery-panel";
     pub const OPTION_PRE_ELEVATE_SERVICE: &str = "pre-elevate-service";
 
@@ -3012,6 +3016,8 @@ pub mod keys {
         // Client-side: keep client system awake during outgoing sessions (General setting)
         OPTION_KEEP_AWAKE_DURING_OUTGOING_SESSIONS,
         OPTION_DISABLE_GROUP_PANEL,
+        OPTION_ACCESSIBLE_DEVICES_HIDE_USERS,
+        OPTION_AB_SHARED_CATALOG_ONLY,
         OPTION_DISABLE_DISCOVERY_PANEL,
         OPTION_PRE_ELEVATE_SERVICE,
         OPTION_ALLOW_REMOTE_CM_MODIFICATION,
